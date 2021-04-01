@@ -171,7 +171,11 @@ class Manager:
                 vers[k] = v
                 ret.append(
                     Plan(
-                        title=f"{k}:{v}", versions=vers, fatal=False, name=k, version=v,
+                        title=f"{k}:{v}",
+                        versions=vers,
+                        fatal=False,
+                        name=k,
+                        version=v,
                     )
                 )
         return ret
